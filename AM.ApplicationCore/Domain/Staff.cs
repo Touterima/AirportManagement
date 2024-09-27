@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace AM.ApplicationCore.Domain
 {
-    internal class Staff
+    public class Staff: Passenger
     {
+        public string Function { get; set; }
+
+        public DateTime EmployementDate { get; set; }
+
+        public float Salary { get; set; }
     }
 }

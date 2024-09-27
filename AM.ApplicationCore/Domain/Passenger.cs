@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace AM.ApplicationCore.Domain
 {
-    internal class Passenger
+    public class Passenger
     {
+        public string PassportNumber { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public DateTime BirthDate { get; set; }
+
+        public int TelNumber { get; set; }
+
+        public string EmailAdresse { get; set; }
+
+        public ICollection<Flight> Flights { get; set; }
+    
     }
 }
